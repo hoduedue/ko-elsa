@@ -9,8 +9,9 @@ function login() {
     
 }
 
-function enterkey() {
-    if(Window.event.keyCode == 13) {
+function enterkey(e) {
+    const code = e.code;
+    if(code == 'Enter') {
         // 엔터키가 눌렸을 때
         login();
     }
