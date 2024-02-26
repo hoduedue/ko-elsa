@@ -9,10 +9,12 @@ function login() {
     
 }
 
-function enterkey(e) {
-    const code = e.code;
+var input = document.getElementById("pw");
+input.addEventListener("keyup", function (event) {
+    console.log(event.code);
+    const code = event.code;
     if(code == 'Enter') {
         // 엔터키가 눌렸을 때
         login();
     }
-}
+});
